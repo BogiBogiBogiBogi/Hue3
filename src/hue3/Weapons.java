@@ -1,6 +1,7 @@
 package hue3;
 
 public class Weapons {
+
     CombatType comtyp;
     DamageType damtyp;
     String name;
@@ -18,7 +19,38 @@ public class Weapons {
         this.strength = strength;
         this.value = value;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "comtyp=" + comtyp + ", damtyp=" + damtyp + ", name=" + name + ", damage=" + damage + ", speed=" + speed + ", strength=" + strength + ", value=" + value;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public CombatType getComtyp() {
+        return comtyp;
+    }
+
+    public DamageType getDamtyp() {
+        return damtyp;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
 }

@@ -20,7 +20,8 @@ public class WeaponsReader {
             File file = new File("weapons.csv");
             Scanner scan = new Scanner(file);
             String s = "";
-            while(scan.hasNext()){
+            scan.nextLine();
+            while (scan.hasNext()) {
                 s = scan.nextLine();
                 String array[] = s.split(";");
                 Weapons w;
